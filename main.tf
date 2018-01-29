@@ -17,6 +17,7 @@ resource "aws_key_pair" "tectonic" {
 }
 
 module "vpc" {
+  # https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/1.9.1
   source  = "terraform-aws-modules/vpc/aws"
   version = "1.9.1"
 
@@ -42,6 +43,7 @@ module "vpc" {
 
 
 module "kubernetes" {
+  # https://registry.terraform.io/modules/coreos/kubernetes/aws/1.8.4-tectonic.3
   source  = "coreos/kubernetes/aws"
   version = "1.8.4-tectonic.3"
 
