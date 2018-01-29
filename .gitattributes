@@ -1,0 +1,4 @@
+generated/** filter=git-crypt diff=git-crypt
+creds/** filter=git-crypt diff=git-crypt
+identity/** filter=git-crypt diff=git-crypt
+terraform.tfvars filter=git-crypt diff=git-crypt
