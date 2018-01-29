@@ -6,14 +6,14 @@ Terraform resources for Tectonic Kubernetes cluster
 - Install [git-crypt](https://www.agwa.name/projects/git-crypt/)
 - Ensure you have an AWS access key and secret in `~/.aws/credentials`
 - Check out this repo
-- Run `$ terrform init`
+- Run `$ terraform init`
 
 ## git-crypt
 
 The directories `creds`, `generated` and `identity`, and the `terraform.tfvars` file contain sensitive values, and are encrypted with `git-crypt`, so your GPG keys must be added to the keychain to decrypt.
 
 ## First run - creating cluster
-Due to an [open issue in Terraform](https://github.com/hashicorp/terraform/issues/12570) resources must be created in two phases:
+Due to an [open issue in Terraform](https://github.com/hashicorp/terraform/issues/12570), resources must be created in two phases:
 
 - `$ terraform apply -target=module.vpc`
 - `$ terraform apply -target=module.kubernetes`
