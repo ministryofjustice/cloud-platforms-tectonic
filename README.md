@@ -1,4 +1,6 @@
-# cloud-platforms-tectonic
+# DEPRECATED
+Please see Cloud Platform Infrastructure repo for all Cloud Platform cluster needs. 
+https://github.com/ministryofjustice/cloud-platform-infrastructure
 Terraform resources for Tectonic Kubernetes cluster
 
 ## Prequisites
